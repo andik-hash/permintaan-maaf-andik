@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Permintaan Maaf</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="card animate-fade">
+        <div class="icon">🙏</div>
+        <h1>I'm So Sorry...</h1>
+        <div class="surat-box">
+            <p>Aku tahu aku salah dan mungkin udah bikin kamu kesal atau sedih. Aku sama sekali gak bermaksud buat begitu.</p>
+            <p>Lewat tulisan ini, dengan tulus aku mau minta maaf ya? Semoga kamu mau dengerin dan maafin aku.</p>
+        </div>
+        <p class="tanya">Apakah kamu mau maafin aku?</p>
+        <div class="btn-group">
+            <a href="akhir.html" class="btn">Mau 💖</a>
+            <a href="#" class="btn btn-secondary" id="btn-no" onclick="pindahTombol()">Nggak 😢</a>
+        </div>
+    </div>
+
+    <script>
+        // Sedikit trik usil: kalau tombol "Nggak" diklik/disentuh, dia akan berpindah tempat otomatis!
+        function pindahTombol() {
+            const btnNo = document.getElementById('btn-no');
+            const x = Math.random() * (window.innerWidth - btnNo.offsetWidth);
+            const y = Math.random() * (window.innerHeight - btnNo.offsetHeight);
+            
+            btnNo.style.position = 'absolute';
+            btnNo.style.left = x + 'px';
+            btnNo.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
