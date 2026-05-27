@@ -1,0 +1,127 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, Arial;
+}
+
+body {
+    background: linear-gradient(135deg, #ffe5ec, #ffc2d1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Kotak Utama / Card */
+.card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff4d6d;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Box Surat Khusus Halaman 2 */
+.surat-box {
+    background: #fff0f3;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #ff758f;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.surat-box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.tanya {
+    font-weight: bold;
+    color: #ff4d6d;
+}
+
+/* Tombol-Tombol */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff4d6d;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+}
+
+.btn:hover {
+    background: #ff758f;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: #a3a3a3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+    background: #b5b5b5;
+}
+
+.btn-back {
+    display: inline-block;
+    color: #ff4d6d;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}
+
+/* Animasi Muncul Halus */
+.animate-fade {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
